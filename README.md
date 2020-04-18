@@ -4,7 +4,7 @@
 ### How To Use:
   Step 1:
 ```sh
-git clone  the repo
+git clone https://github.com/sooraj771989/HPD.git
 ```
   Step 2:
 ```sh
