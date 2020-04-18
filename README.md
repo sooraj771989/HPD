@@ -1,2 +1,0 @@
-# HPD
-Created with CodeSandbox
