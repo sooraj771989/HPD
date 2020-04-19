@@ -1,22 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../img/logo.png";
-import profile from "../img/profile.png";
+import logo from "./../assets/img/logo.png";
+import profile from "./../assets/img/profile.png";
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
-    const {} = this.props;
     return (
       <nav className="bg-blue">
         <div className="px-4 py-4 w-full mx-auto">
-          <div className="container mx-auto flex justify-between">
-            <div className="brand flex">
-              <img className="logo mr-4 mt-4 " src={logo} alt="Logo" />
-
-              <div class="nav">
+          <div className="container mx-auto flex  justify-between">
+            <div className="brand flex flex-wrap">
+            <NavLink
+                  exact
+                  to="/"
+                >
+                  <img className="logo mr-4 mt-0 lg:mt-4 " src={logo} alt="Logo" />
+                  </NavLink>
+              <div className="nav mt-4 lg:mt-0">
                 <NavLink
                   exact
                   to="/"

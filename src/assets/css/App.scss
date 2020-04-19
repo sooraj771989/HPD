@@ -1,10 +1,11 @@
-
-
 .logo {
   width: 84px;
   height: 75px;
 }
-
+body {
+  font-family: SF UI Display;
+  text-align: center;
+}
 .text-title {
   font-style: normal;
   font-weight: 500;
@@ -17,13 +18,12 @@
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 60px;
   text-transform: capitalize;
-  color: #6CCAA9;
+  color: #6ccaa9;
 }
 
 .user-item-container {
-  border-bottom: 1px solid #DDDFE1;
+  border-bottom: 1px solid #dddfe1;
 }
 
 .user-item-container:hover {
@@ -36,7 +36,7 @@
 }
 
 .bg-blue {
-  background-color: #351CA4;
+  background-color: #351ca4;
 }
 
 .nav a {
@@ -44,7 +44,7 @@
 }
 
 .nav .active {
-  border-bottom: 2px solid #70CCA8;
+  border-bottom: 2px solid #70cca8;
 }
 
 .profile-text {
@@ -61,11 +61,11 @@
 .copyright-text {
   font-weight: 500;
   font-size: 15px;
-  color: #8A8A8A;
+  color: #8a8a8a;
 }
 
 .table-border {
-  border: 1px solid #DDDFE1;
+  border: 1px solid #dddfe1;
 }
 
 .footer-div {
@@ -79,14 +79,32 @@
 
 .btn-green {
   color: #fff;
-  background: #6CCAA9;
+  background: #6ccaa9;
   border-radius: 4px;
-  border-color: #6CCAA9;
+  border-color: #6ccaa9;
   font-weight: 500;
   font-size: 20px;
   line-height: 60px;
 }
 
+.navigation-btn {
+  background: #6ccaa9;
+  border-radius: 50%;
+}
+
+.navigation-btn:hover {
+  background: #309e78;
+}
+
+button:focus,
+a:focus {
+  outline: none;
+}
+
+.btn-green:hover {
+  background: #309e78;
+  border-color: #309e78;
+}
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -111,4 +129,40 @@
 .loading-icon {
   height: 100px;
   width: 100px;
+}
+
+table th {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #464a53;
+}
+
+table td {
+  font-weight: 500;
+  font-size: 15px;
+  color: #464a53;
+  text-align: left;
+}
+
+.bg-penta {
+  position: relative;
+}
+
+.bg-penta:after{
+  border: 150px solid #351ca4;
+  border-top-width: 160px;
+  width: 100%;
+  border-color: #351ca4 transparent transparent transparent;
+  position: absolute;
+  top: 0px;
+  content: '';
+  left: 0;
+}
+
+.table-div{
+  background: rgb(255, 255, 255);
+  overflow: visible;
+  position: relative;
+  z-index: 1000;
 }
